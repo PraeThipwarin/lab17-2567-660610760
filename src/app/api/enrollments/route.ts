@@ -5,7 +5,6 @@ import {
 } from "@lib/schema";
 import { DB, Student } from "@lib/DB";
 import { NextRequest, NextResponse } from "next/server";
-import { string } from "zod";
 
 export const GET = async (request:NextRequest) => {
   const studentId = request.nextUrl.searchParams.get("studentId");
